@@ -251,7 +251,7 @@ const Hero = () => (
       <AnimatedSection>
         <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
           Build Your Digital Presence with
-          <span className="text-teal-500">CodeInn’ Tech</span>
+          <span className="text-teal-500"> CodeInn’ Tech</span>
         </h1>
       </AnimatedSection>
       <AnimatedSection delay={200}>
