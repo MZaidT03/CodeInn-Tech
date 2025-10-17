@@ -166,7 +166,7 @@ const Header = () => {
         <a href="#" className="text-2xl font-bold text-white">
           CodeInn’ <span className="text-teal-500">Tech</span>
         </a>
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 items-center">
           <a
             href="#about"
             className="text-slate-300 hover:text-teal-500 transition duration-300"
