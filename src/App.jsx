@@ -675,7 +675,7 @@ const Team = () => {
     {
       id: 2,
       name: "Danish Imran",
-      role: ".NET & Backend Engineer",
+      role: ".NET Core & Backend Engineer",
       imageUrl: `https://placehold.co/400x400/000000/${goldAccent.substring(
         1
       )}?text=DI`,
