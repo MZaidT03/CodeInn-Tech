@@ -1,0 +1,4 @@
+# TODO: Replace domain with the production CodeInn Tech website URL.
+User-agent: *
+Allow: /
+Sitemap: https://www.codeinntech.com/sitemap.xml

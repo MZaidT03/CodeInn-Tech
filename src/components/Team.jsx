@@ -7,7 +7,7 @@ const teamMembers = [
     name: "Muhammad Zaid Tahir",
     role: "Founder & Lead Developer",
     imageUrl: `https://placehold.co/400x400/000000/${goldAccent.substring(1)}?text=MZT`,
-    bio: "Zaid leads CodeInn' Tech with a passion for turning complex problems into elegant, user-friendly digital solutions using React and React Native.",
+    bio: "Zaid leads CodeInn Tech with a passion for turning complex problems into elegant, user-friendly digital solutions using React and React Native.",
     socials: [
       { name: "Instagram", href: "https://www.instagram.com/_zaid.t_/", icon: <InstagramIcon /> },
       { name: "Twitter", href: "https://x.com/_MZaidTahir_", icon: <TwitterIcon /> },
@@ -20,7 +20,7 @@ const teamMembers = [
     name: "Danish Imran",
     role: ".NET Core & Backend Engineer",
     imageUrl: `https://placehold.co/400x400/000000/${goldAccent.substring(1)}?text=DI`,
-    bio: "Danish is a core member of CodeInn' Tech, passionate about building scalable backend systems with .NET Core and ASP.NET MVC, using modern tools like Docker, Git, and SQL to deliver robust digital solutions.",
+    bio: "Danish is a core member of CodeInn Tech, passionate about building scalable backend systems with .NET Core and ASP.NET MVC, using modern tools like Docker, Git, and SQL to deliver robust digital solutions.",
     socials: [
       { name: "Twitter", href: "https://x.com/_xteve", icon: <TwitterIcon /> },
       { name: "LinkedIn", href: "https://www.linkedin.com/in/danish-imran-380220310/", icon: <LinkedinIcon /> },
@@ -68,6 +68,8 @@ const Team = () => (
                   alt={member.name}
                   className="w-full h-full rounded-full object-cover"
                   style={{ border: `4px solid ${goldAccent}` }}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div
                   className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-300"

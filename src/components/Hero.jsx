@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 import { goldAccent, ChevronDownIcon } from "./Icons";
 import AnimatedSection from "./AnimatedSection";
 
-const taglines = ["Web Development", "Mobile Apps", "AI Solutions", "UI/UX Design"];
+const taglines = [
+  "Website Development",
+  "Mobile App Development",
+  "Custom Software",
+  "UI/UX Design",
+];
 
 const Hero = () => {
   const [currentTagline, setCurrentTagline] = useState(0);
@@ -55,10 +60,10 @@ const Hero = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={100}>
-          <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
-            Innovation by{" "}
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+            CodeInn Tech —{" "}
             <span className="gradient-text block md:inline">
-              CodeInn&apos; Tech
+              Software House in Gujranwala, Pakistan
             </span>
           </h1>
         </AnimatedSection>
@@ -75,7 +80,8 @@ const Hero = () => {
 
         <AnimatedSection delay={300}>
           <p className="text-lg text-neutral-400 max-w-2xl mx-auto mb-10">
-            Delivering high-end web, mobile, and AI solutions with precision and professionalism.
+            We build modern websites, mobile apps, and custom software for businesses across Pakistan with a focus
+            on performance, UX, and SEO.
           </p>
         </AnimatedSection>
 
@@ -86,14 +92,14 @@ const Hero = () => {
               className="text-black font-bold px-8 py-3 rounded-md hover:brightness-110 transition duration-300 transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               style={{ backgroundColor: goldAccent, outlineColor: goldAccent }}
             >
-              Get a Quote
+              Get Free Consultation
             </a>
             <a
-              href="#portfolio"
+              href="#services"
               className="border-2 font-bold px-8 py-3 rounded-md hover:bg-[#C0A062] hover:text-black transition duration-300 transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               style={{ borderColor: goldAccent, color: goldAccent, outlineColor: goldAccent }}
             >
-              View Work
+              Explore Services
             </a>
           </div>
         </AnimatedSection>

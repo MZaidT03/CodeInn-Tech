@@ -89,32 +89,32 @@ const About = () => {
               />
               <img
                 src={`https://placehold.co/600x600/000000/${goldAccent.substring(1)}?text=MZT`}
-                alt="Muhammad Zaid Tahir"
+                alt="Muhammad Zaid Tahir, Founder of CodeInn Tech"
                 className="relative rounded-lg shadow-2xl w-full"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </AnimatedSection>
 
           <AnimatedSection delay={200}>
-            <h2 className="text-3xl font-bold text-white mb-4">About Me</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">About CodeInn Tech</h2>
             <p className="text-lg text-neutral-300 mb-6">
-              Hi, I&apos;m{" "}
+              CodeInn Tech is a software house in Gujranwala, Pakistan founded by{" "}
               <span className="font-semibold" style={{ color: goldAccent }}>
                 Muhammad Zaid Tahir
               </span>
-              , the founder and lead developer at CodeInn&apos; Tech. Based in
-              Gujranwala, Pakistan, I specialize in crafting high-performance
-              websites and mobile applications using cutting-edge technologies.
+              . We help startups and growing businesses build high-performance websites, mobile applications, and
+              business automation tools that drive real results.
             </p>
             <p className="text-neutral-400 mb-6">
-              My expertise lies in{" "}
+              Our team combines product strategy, UI/UX design, and full-stack development expertise using{" "}
               <span className="font-semibold text-neutral-200">
-                React.js, React Native, Supabase,
+                React, React Native, Supabase,
               </span>{" "}
               and{" "}
               <span className="font-semibold text-neutral-200">Tailwind CSS</span>
-              . I am passionate about turning complex problems into elegant,
-              user-friendly digital solutions.
+              . We serve clients across Pakistan with clear communication and dependable delivery.
             </p>
             <div
               className="bg-[#121212] p-6 rounded-lg mb-8"
@@ -124,6 +124,23 @@ const About = () => {
                 &ldquo;Our mission is to empower local and global businesses with modern
                 digital solutions that drive growth and success.&rdquo;
               </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4 mb-8">
+              <a
+                href="#services"
+                className="text-sm font-semibold hover:underline transition duration-300"
+                style={{ color: goldAccent }}
+              >
+                View our services →
+              </a>
+              <a
+                href="#team"
+                className="text-sm font-semibold hover:underline transition duration-300"
+                style={{ color: goldAccent }}
+              >
+                Meet the team →
+              </a>
             </div>
 
             {/* Stats counter row */}

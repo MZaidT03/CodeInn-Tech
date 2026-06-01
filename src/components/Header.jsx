@@ -2,10 +2,13 @@ import { useState, useEffect } from "react";
 import { goldAccent } from "./Icons";
 
 const navLinks = [
+  { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "#portfolio", label: "Work" },
-  { href: "#team", label: "Team" },
+  { href: "#why-choose-us", label: "Why Us" },
+  { href: "#portfolio", label: "Portfolio" },
+  { href: "#process", label: "Process" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 const Header = () => {
@@ -22,7 +25,18 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    const sectionIds = ["about", "services", "portfolio", "team", "contact"];
+    const sectionIds = [
+      "home",
+      "about",
+      "services",
+      "why-choose-us",
+      "portfolio",
+      "process",
+      "team",
+      "faq",
+      "blog",
+      "contact",
+    ];
     const observers = [];
 
     sectionIds.forEach((id) => {
@@ -52,11 +66,11 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-white">
-          CodeInn&apos; <span style={{ color: goldAccent }}>Tech</span>
+        <a href="#home" className="text-2xl font-bold text-white">
+          CodeInn <span style={{ color: goldAccent }}>Tech</span>
         </a>
 
-        <nav className="hidden md:flex space-x-8 items-center">
+        <nav className="hidden md:flex space-x-6 items-center" aria-label="Primary">
           {navLinks.map((link) => {
             const sectionId = link.href.replace("#", "");
             const isActive = activeSection === sectionId;
@@ -64,6 +78,7 @@ const Header = () => {
               <a
                 key={link.href}
                 href={link.href}
+                aria-current={isActive ? "page" : undefined}
                 className={`transition duration-300 relative pb-1 ${
                   isActive ? "text-white" : "text-neutral-300 hover:text-white"
                 }`}
@@ -84,7 +99,7 @@ const Header = () => {
             className="text-black font-semibold px-4 py-2 rounded-md hover:brightness-110 transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             style={{ backgroundColor: goldAccent, outlineColor: goldAccent }}
           >
-            Get a Quote
+            Start Your Project
           </a>
         </nav>
 
@@ -144,7 +159,7 @@ const Header = () => {
             transitionDelay: isMenuOpen ? `${navLinks.length * 50}ms` : "0ms",
           }}
         >
-          Get a Quote
+          Start Your Project
         </a>
       </div>
     </header>
