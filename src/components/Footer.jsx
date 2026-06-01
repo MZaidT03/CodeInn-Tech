@@ -39,11 +39,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left mb-8">
           <div>
             <h3 className="text-xl font-bold text-white mb-4">
-              CodeInn&apos; <span style={{ color: goldAccent }}>Tech</span>
+              CodeInn <span style={{ color: goldAccent }}>Tech</span>
             </h3>
-            <p className="text-neutral-400">Digital Craftsmanship, Delivered.</p>
+            <p className="text-neutral-400">Software house in Gujranwala, Pakistan.</p>
             <p className="text-neutral-400">
-              Empowering businesses with modern digital solutions.
+              Empowering businesses nationwide with modern digital solutions.
             </p>
           </div>
 
@@ -63,7 +63,9 @@ const Footer = () => {
                   03114680774
                 </a>
               </li>
-              <li>Gujranwala, Pakistan</li>
+              <li>
+                <address className="not-italic">Gujranwala, Punjab, Pakistan</address>
+              </li>
             </ul>
           </div>
 
@@ -123,7 +125,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center text-neutral-500 border-t border-neutral-800 pt-8">
-          <p>Copyright © 2025 CodeInn&apos; Tech. All Rights Reserved.</p>
+          <p>Copyright © 2026 CodeInn Tech. All Rights Reserved.</p>
         </div>
       </div>
 

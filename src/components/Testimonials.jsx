@@ -5,19 +5,19 @@ import { goldAccent, ChevronLeftIcon, ChevronRightIcon } from "./Icons";
 const testimonials = [
   {
     quote:
-      "CodeInn' Tech delivered a fantastic website for our restaurant. It's fast, looks great on mobile, and has boosted our online orders significantly. Highly recommended!",
+      "CodeInn Tech delivered a fantastic website for our restaurant. It's fast, looks great on mobile, and has boosted our online orders significantly. Highly recommended!",
     name: "Ali Hassan",
     role: "Owner, GRW Eatery",
   },
   {
     quote:
-      "Working with CodeInn' was a breeze. They understood our vision for a startup app and brought it to life with great skill. The final product exceeded our expectations.",
+      "Working with CodeInn Tech was a breeze. They understood our vision for a startup app and brought it to life with great skill. The final product exceeded our expectations.",
     name: "Fatima Jilani",
     role: "Founder, LocalCart",
   },
   {
     quote:
-      "Professional, reliable, and technically proficient. CodeInn' provided excellent support throughout the development process of our business's internal tool.",
+      "Professional, reliable, and technically proficient. CodeInn Tech provided excellent support throughout the development process of our business's internal tool.",
     name: "Usman Butt",
     role: "Manager, Chenab Fabrics",
   },
@@ -46,7 +46,7 @@ const Testimonials = () => {
         <AnimatedSection customClassName="text-center mb-12">
           <h2 className="text-3xl font-bold text-white">What Our Clients Say</h2>
           <p className="text-neutral-400 mt-2">
-            Trusted by local businesses in Gujranwala.
+            Trusted by businesses across Gujranwala and Pakistan.
           </p>
         </AnimatedSection>
 

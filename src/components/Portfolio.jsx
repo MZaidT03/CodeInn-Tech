@@ -54,9 +54,9 @@ const Portfolio = () => {
     <section id="portfolio" className="py-20 bg-[#0A0A0A]">
       <div className="container mx-auto px-6">
         <AnimatedSection customClassName="text-center mb-12">
-          <h2 className="text-3xl font-bold text-white">Our Work</h2>
+          <h2 className="text-3xl font-bold text-white">Portfolio & Projects</h2>
           <p className="text-neutral-400 mt-2">
-            A selection of our featured projects.
+            A selection of software projects delivered for clients in Pakistan.
           </p>
         </AnimatedSection>
 
@@ -128,6 +128,16 @@ const Portfolio = () => {
             </AnimatedSection>
           ))}
         </div>
+
+        <AnimatedSection customClassName="text-center mt-12">
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center px-8 py-3 rounded-md text-black font-semibold transition duration-300 hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+            style={{ backgroundColor: goldAccent, outlineColor: goldAccent }}
+          >
+            Start Your Project
+          </a>
+        </AnimatedSection>
       </div>
     </section>
   );
